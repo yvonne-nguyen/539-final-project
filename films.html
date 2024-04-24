@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylereset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/kjd1pwx.css">
+    <script src="js/isotope.js"></script>
+    <script src="js/redirect.js"></script>
+    <title>Films</title>
+</head>
+<body>
+    <a class="skip-to-main" href="#main-content">Skip to Main Content</a>
+    <nav>
+        <ul class="nav-item nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="philosophers.html">Philosophy</a></li>
+            <li><a href="films.html">Films</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <header>
+            <h1 class="films-page">Films</h1>
+        </header>
+
+        <h2 class="films">Genre</h2>
+
+        <div id="myBtnContainer">
+            <button class="btn active" data-filter="all" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" data-filter="action" onclick="filterSelection('action')"> Action</button>
+            <button class="btn" data-filter="animation" onclick="filterSelection('animation')"> Animation</button>
+            <button class="btn" data-filter="comedy" onclick="filterSelection('comedy')"> Comedy</button>
+            <button class="btn" data-filter="drama" onclick="filterSelection('drama')"> Drama</button>
+            <button class="btn" data-filter="family" onclick="filterSelection('family')"> Family</button>
+            <button class="btn" data-filter="fantasy" onclick="filterSelection('fantasy')"> Fantasy</button>
+            <button class="btn" data-filter="horror" onclick="filterSelection('horror')"> Horror</button>
+            <!-- <button class="btn" data-filter="mystery" onclick="filterSelection('mystery')"> Mystery</button> -->
+            <button class="btn" data-filter="romance" onclick="filterSelection('romance')"> Romance</button>
+            <button class="btn" data-filter="sci-fi" onclick="filterSelection('sci-fi')"> Science Fiction</button>
+            <!-- <button class="btn" data-filter="thriller" onclick="filterSelection('thriller')"> Thriller</button> -->
+        </div>
+
+        <div class="container">
+            <div class="filterDiv romance drama" onclick="redirectToPage('inthemoodforlove.html')">
+                <img src="img/itmfl2.png" alt="In the Mood For Love movie poster">
+            </div>
+
+
+            <div class="filterDiv horror drama" onclick="redirectToPage('helterskelter.html')">
+                <img src="img/helterskelter.png" alt="Helter Skelter movie poster">
+            </div>
+
+            <div class="filterDiv comedy drama romance action" onclick="redirectToPage('loveexposure.html')">
+                <img src="img/loveexposure.png" alt="Love Exposire movie poster">
+            </div>
+
+            <div class="filterDiv drama romance sci-fi" onclick="redirectToPage('her.html')">
+                <img src="img/her.png" alt="Her movie poster">
+            </div>
+
+            <div class="filterDiv romance drama" onclick="redirectToPage('ritual.html')">
+                <img src="img/ritual.png" alt="Ritual movie poster">
+            </div>
+
+            <div class="filterDiv romance drama comedy" onclick="redirectToPage('thelobster.html')">
+                <img src="img/thelobster.png" alt="The Lobster movie poster">
+            </div>
+
+            <div class="filterDiv romance drama" onclick="redirectToPage('thepianoteacher.html')">
+                <img src="img/thepianoteacher.png" alt="The Piano Teacher movie poster">
+            </div>
+
+            <div class="filterDiv comedy romance sci-fi" onclick="redirectToPage('poorthings.html')">
+                <img src="img/poorthings.jpg" alt="Poor Things movie poster">
+            </div>
+
+            <div class="filterDiv drama comedy" onclick="redirectToPage('beingthere.html')">
+                <img src="img/beingthere.png" alt="Being There movie poster">
+            </div>
+
+            <div class="filterDiv comedy drama" onclick="redirectToPage('thetrumanshow.html')">
+                <img src="img/thetrumanshow.png" alt="The Truman Show movie poster">
+            </div>
+
+            <div class="filterDiv comedy drama" onclick="redirectToPage('anotherround.html')">
+                <img src="img/anotherround.png" alt="Another Round movie poster">
+            </div>
+
+            <div class="filterDiv action drama sci-fi" onclick="redirectToPage('snowpiercer.html')">
+                <img src="img/snowpiercer.png" alt="Snowpiercer movie poster">
+            </div>
+
+            <div class="filterDiv comedy animation family fantasy" onclick="redirectToPage('soul.html')">
+                <img src="img/soul.png" alt="Soul movie poster">
+            </div>
+
+            <!-- <div class="filterDiv animation thriller" onclick="redirectToPage('perfectbluehtml')">
+                <img src="img/perfectblue.png" alt="Perfect Blue movie poster">
+            </div> -->
+
+            <div class="filterDiv drama fantasy" onclick="redirectToPage('theseventhseal.html')">
+                <img src="img/theseventhseal.png" alt="The Seventh Seal movie poster">
+            </div>
+
+            <!-- <div class="filterDiv horror mystery thriller" onclick="redirectToPage('getout.html')">
+                <img src="img/getout.png" alt="Get Out poster">
+            </div> -->
+        </div>
+
+    </main>
+</body>
+</html>
